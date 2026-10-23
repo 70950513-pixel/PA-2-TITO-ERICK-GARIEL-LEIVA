@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#contenido{
+    max-width:800px;
+    margin:0 auto;
+   
+}
+
+
+h1,h2,h3,h4{
+    text-align: center;
+    padding: 20px;
+    font-family: "Great Vibes", cursive;
+    font-weight:600;
+}
+
+p{
+    text-align: justify;
+}
+
+img{
+    max-width:100%;
+    display:block
+}
+
+#principal{
+    width:100%;
+    height: 100vh;
+    background-image: url(../imgBonejos/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
+#centro{
+    width:70%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:black;
+    background-color: #ffffff8c;
+    box-shadow: 5px 5px 12px 5px #ffffff8c;
+    border-radius: 100px;
+}
+
+#centro h1{
+    font-family: "Great Vibes";
+    text-align: center;
+    padding: 20px;
+    font-family: "Great Vibes", cursive;
+    font-size: 3em;
+}
+
+#centro #menu a{
+    color:black;
+}
+
+#centro p{
+    text-align: center;
+    font-size: 20px;
+}
+
+#centro nav{
+    padding: 15px 0px;
+    background-color: rgb(253, 253, 253);
+}
+
+#centro #menu,#menu2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#centro li{
+    list-style-type: none;
+    padding:10px;
+    
+}
+
+#centro #menu a{
+    text-decoration: none;
+    color:rgb(5, 5, 5);
+    font-size: 20px;
+}
+
+#centro #menu a:hover{
+    opacity: 0.5;
+}
+
+#centro #iconos{
+    text-align: center;      
+}
+
+#centro i{
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(5, 5, 5);
+}
+
+#centro #iconos i:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+/* HEADER */
+
+#cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(240, 255, 248);
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    background-color: #fff;
+}
+
+/* NAV */
+
+#menu2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding: 15px;
+}
+
+#menu2 li{
+    list-style: none;
+}
+
+
+#menu2 li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* SECTION */
+#contenido-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+#grupo{
+    display: grid;
+    grid-template-columns: 0.7fr 2.5fr;
+    gap: 15px;
+}
+
+#galeria{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#galeria-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#galeria-img{
+    box-shadow: 5px 5px 7px 3px rgba(32, 32, 32, 0.502);
+}
+
+#grupo-h1{
+    display: grid;
+    grid-template-columns: 2.5fr 0.3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#autor{
+    width:100%;
+    text-align: center;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#yo{
+    width:50px;
+    border-radius: 50%;
+    
+}
+
+#ola{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+#iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+#iconos i{
+    font-size: 2em;
+    color:rgb(5, 5, 5);
+}
+
+#iconos i:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
